@@ -1,0 +1,89 @@
+/*MINI GAME*/
+.MG-container {
+  padding:5px 30px 30px 30px;
+  margin:30px;
+  border:solid white 1px;
+  border-radius:5px;
+  background-color:white;
+  text-align:center;
+  color: black;
+  border-color:orange;
+  font-family: Arial;
+  width: 75%;
+}
+/*Botões de baixo*/
+.btn-success, .btn-danger {
+  width:200px;
+}
+/*Botões de baixo 768px*/
+@media all and (max-width: 768px) {
+  .btn-success, .btn-danger {
+    width: 100px;
+  }
+}
+/*!!!!!!!!!!!!!!!!!*/
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: orange;
+    border-color: orange;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: orange;
+    border-color: orange;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: orange;
+    border-color: orange;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    color: #fff;
+    background-color: #b22f27; /*vermelho da navbar*/
+    border-color: #b22f27; /*vermelho da navbar*/
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: orange;    /*vermelho da navbar*/
+    border-color: orange;  /*vermelho da navbar*/
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    background-color: orange;
+	border-color:orange;
+}
+
+
+/*Tabela*/
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid orange;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid orange;
+    color: black;
+}
+
+td, th {
+    color: black;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #fff;
+	color:black;
+}
