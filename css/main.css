@@ -156,6 +156,7 @@ input {
 
 .footer-distributed .footer-center{
 	width: 35%;
+	padding-top: 25px;
 }
 
 .footer-distributed .footer-center i{
@@ -208,12 +209,9 @@ input {
 	cursor: pointer;
 	background-color:  #590d1c;
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
-	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
 	padding-top: 7px;
