@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="css/nav.css">
   <!-- scripts -->
   <script src="javascripts/galeriadeimagens.js"></script>
-  <script src="javascripts/minigame.js"></script>
+
   <!-- font -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
 
@@ -35,6 +35,7 @@
 		<center><ul>
 			<li><a href='#inicio'><span>PÁGINA INICIAL</span></a></li>
 			<li><a href='#sobre'><span>SOBRE</span></a></li>
+			<li><a href='#download'><span>DOWNLOAD</span></a></li>
 			<li><a href='#galeria'><span>GALERIA</span></a></li>
 			<li><a href='#minijogo'><span>MINI JOGO</span></a></li>
 			<li class='last'><a href='#avaliar'><span>AVALIAR</span></a></li>
@@ -58,8 +59,10 @@
 					<br><br><br><h3><strong>O que é um "Clicker Game"?</strong><br> Um jogo clicker ou incremental é um jogo eletronico que tem como base o jogador realizar uma ação simples e repetitiva para ganhar algo em troca.<br><br><br><strong>Como jogar?</strong><br> - Coleta o dinheiro que conseguires assaltando o cowboy que guarda o dinheiro. Quanto mais rápido clicares, mais dinheiro lhe vais roubar.<br> - Quando tiveres dinheiro suficiente, vai à loja e compra upgrades para conseguires roubar dinheiro mais rápido.<br> - Estás cansado de ver o cowboy careca? Não faz mal! Dirige-te à loja do visual e compra-lhe um chapéu.<br><br>O Assalto ao Banco é um jogo sem fim e por isso podes jogar durante o tempo que quiseres. Ilimitado...<br>Se quiseres definir um objetivo para terminar o jogo, nós ajudamos-te:<br><br> <strong>- Quando tiveres todas as proezas concluídas considera-te o melhor ladrão de todos.</strong> <br> Mais abaixo na página podes encontrar um "mini jogo clicker".</h3> 
 				</figure>
 			</div>
-			
-
+		
+		</div>
+		<p id="download"></p>	
+		<div class="container">
 			<div class="Download">
 					<p><h2><center>Download do Jogo</center></h2>
 					<p><center> 
@@ -214,37 +217,30 @@
     <section class="module parallax2 parallax-3">
         <div class="container"></div>
     </section>
+<!--script mini jogo-->	
+	<script>
+		var i = 0;
+		function buttonClick() {
+			i++;
+			document.getElementById('inc').value = i;
+		}
+	</script>
+<!-- fim script mini jogo-->	
 <!-- INICIO MINI JOGO-->
 		<p id="minijogo"></p>
-    <center><section class="module content">
+		<center><section class="module content">
         <div class="row">
 			<p><h2><center>Mini Jogo</center></h2><p>
 		</div>	
 		<div class="MG-container">
 			<br></br>
-			<center><button id="click" type="button" class="btn btn-primary btn-lg btn-block">Click Aqui</button></center>
+			<center><button onclick="buttonClick();" type="button" class="btn btn-primary btn-lg btn-block">Click Aqui</button></center>
 			<hr>
 			<br>
-				Clicks: <span id="total_clicks">0</span><br />
-				Clicks por <small id="time_period">1.00</small> segundo: <span id="clicks_per_second">0</span>
-			</br>
-		<br>
-		<table class="table">
-			<tr>
-				<td>Click Automático</td>
-				<td><span id="autoclicker_level">lvl 0</span></td>
-				<td><button id="buy_click" type="button" class="btn btn-success">Custo: 1</button></td>
-			</tr>
-			<tr>
-				<td>Ativar e Acelarar 10%</td>
-				<td><span id="speed_level">lvl 0</span></td>
-				<td><button id="upgrade_speed" type="button" class="btn btn-success">Custo: 100</button></td>
-			</tr>
-      
-    </table>
-	<!--Tem de ligar AQUI ao script para funcionar-->
-		<script src="javascripts/minigame.js"></script>    
-		</div>	
+				Clicks: <input type="text" id="inc" size="1" value="0"></input>
+			<br>
+		</div>
+		</center>	 
 
 <!--FIM Mini Game-->
 
@@ -280,9 +276,8 @@
 				</div>
 				<div class="footer-icons">
 					<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
-					<a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
-					<a href="https://pt.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
-					<a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="https://play.google.com/store/apps/details?id=com.westernassault&hl=pt-PT" target="_blank"><i class="fa fa-play"></i></a>
+					<a href="https://github.com/assaltoaobanco/assaltoaobanco.github.io" target="_blank"><i class="fa fa-github"></i></a>
 				</div>
 				<br>
 					<p class="footer-company-name">&copy; 2017, Assalto ao Banco</p>

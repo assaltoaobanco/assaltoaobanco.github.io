@@ -125,7 +125,12 @@ section .row img {
 section .Download img {
     width: 30%;
 }
-
+/* mini game clicks */ 
+input {
+    border: none;
+    background: transparent;
+	 text-align: right; 
+}
 
 
 /* ============================================================
