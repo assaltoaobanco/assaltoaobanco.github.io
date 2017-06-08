@@ -12,7 +12,7 @@
   <title>Assalto ao Banco</title>
   
    <!-- bootstrap online -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- bootstrap offline -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="iconredessociais/css/font-awesome.min.css">
@@ -31,6 +31,7 @@
 </head>
 
 <body>
+  <!-- barra de navegação -->
 	<div id='cssmenu'>
 		<center><ul>
 			<li><a href='#inicio'><span>INÍCIO</span></a></li>
@@ -41,11 +42,12 @@
 			<li class='last'><a href='#avaliar'><span>AVALIAR</span></a></li>
 		</ul></center>
 	</div>
+	 <!-- começo do efeito parallax -->
 	<div class="wrapper">
 	<p id="inicio"></p>
 
 <main>
-      
+       
       <section class="module parallax parallax-1">
         <div class="container"></div>
       </section>
@@ -79,20 +81,20 @@
       <section class="module content">
         <div class="container">
 		
-<!-- INICIO DO TUTORIAL-->  
+<!-- Galeria de Imagens-->  
 			<p id="galeria"></p>
 		<div class="row">
 			<p><h2><center>Galeria de Imagens</center></h2><p>
 		</div>	
 	
-<!--Aparece as 6 imagens no ecrã--> 
+<!--Imagem principal da galeria de imagens--> 
 		<div class="row">
 			<div class=".col-xs-6 .col-sm-4">
 				<center><img src="img/galeria_imagens1.jpg" onclick="openModal();currentSlide(1)"  style="cursor: pointer;" class="hover-shadow"/></center>
 	
 		</div>   	
 	
-<!--Aparece a "moldura apenas quando é clicada"--> 
+<!--fechar--> 
 	<div id="myModal" class="modal">
 		<span class="close cursor" onclick="closeModal()">&times;</span>
 		
@@ -210,7 +212,7 @@
 	</div>
 	</div>   
  
-<!--FIM DO TUTORIAL-->
+<!--fim da galeria de imagens-->
     </div>
 	</section>
 
@@ -226,7 +228,7 @@
 		}
 	</script>
 <!-- fim script mini jogo-->	
-<!-- INICIO MINI JOGO-->
+<!-- inicio do mini jogo-->
 		<p id="minijogo"></p>
 		<center><section class="module content">
         <div class="row">
@@ -242,9 +244,9 @@
 		</div>
 		</center>	 
 
-<!--FIM Mini Game-->
+<!--fim do mini jogo-->
 
-<!--AVALIACAO-->
+<!--avaliação-->
 			<p id="avaliar"></p>
 		<div class="row">
 			<p><h2><center>&darr; Avalia o nosso trabalho aqui &darr;</center></h2><p>
@@ -265,7 +267,7 @@
 		</div>
 </main>
 
- <!--RODAPE-->
+ <!--rodape-->
 	<footer class="footer-distributed">
 			<center>
 				<div class="footer-center">	
@@ -275,19 +277,13 @@
 				</div>
 				</div>
 				<div class="footer-icons">
-					<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
 					<a href="https://play.google.com/store/apps/details?id=com.westernassault&hl=pt-PT" target="_blank"><i class="fa fa-play"></i></a>
 					<a href="https://github.com/assaltoaobanco/assaltoaobanco.github.io" target="_blank"><i class="fa fa-github"></i></a>
 				</div>
 				<br>
 					<p class="footer-company-name">&copy; 2017, Assalto ao Banco</p>
 			</center>
-	
+	</div>
 </footer>
-  
-<!-- /#wrapper -->
-
-
-
 </body>
 </html>
