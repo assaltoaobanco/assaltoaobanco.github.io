@@ -1,4 +1,7 @@
-/*MINI GAME*/
+/* ============================================================
+  Mini Game
+============================================================ */
+/*tudo o que está dentro do retangulo*/
 .MG-container {
   padding:5px 30px 30px 30px;
   margin:30px;
@@ -13,36 +16,36 @@
 }
 
 
-
+/*botão clicks*/
 .btn-primary:hover {  /*passar por cima fica laranja / se tirar fica azul*/
     color: #fff;
     background-color: orange;
     border-color: orange;
 }
 
-
-
+/*botão clicks*/
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
     color: #fff;
     background-color: #b22f27; /*vermelho da navbar*/
     border-color: #b22f27; /*vermelho da navbar*/
 }
 
+/*botão clicks*/
 .btn-primary.focus, .btn-primary:focus {
     color: #fff;
     background-color: orange;    /*vermelho da navbar*/
     border-color: orange;  /*vermelho da navbar*/
 }
 
+/*botão clicks*/
 .btn-block { /*botão ao ser visto sem clicar*/
     display: block;
     width: 100%;
-    background-color: orange;
+    background-color: orange; /*se tirar laranja fica azul*/
 	border-color:orange;
 }
 
-
-/*Tabela*/
+/*linha dentro do retangulo*/
 hr {  /*linha laranha por cima dos clicks*/
     margin-top: 20px;
     margin-bottom: 20px;

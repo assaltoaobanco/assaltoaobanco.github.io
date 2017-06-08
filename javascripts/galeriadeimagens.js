@@ -1,13 +1,16 @@
-//Galeria de Imagens
-
+/* ============================================================
+  Galeria de Images
+============================================================ */
+/* abrir galeria */
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }
 
+/* fechar galeria */
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
-
+/* o slide começa no 1 */
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -18,7 +21,7 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
+/* codigo para passar de slide e passar a legenda das fotos*/
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");

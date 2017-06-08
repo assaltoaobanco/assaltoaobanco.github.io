@@ -1,6 +1,7 @@
 /* ============================================================
   SECTIONS / SECCÕES
 ============================================================ */
+/* paddings e margins do restante site */
 section.module:last-child {
   margin-bottom: 0;
 }
@@ -15,7 +16,7 @@ section.module p:last-child {
 section.module.content {
   padding: 40px 0;
 }
-
+/* visual para o parllax do inicio / 1º imagem  */
 section.module.parallax {
   height: 600px;
   background-position: 50% 50%;
@@ -26,7 +27,7 @@ section.module.parallax {
   -o-background-size: cover;
   background-size: cover;
 }
-
+/* visual para os restantes parallax */
 section.module.parallax2 {
   height: 320px;
   background-position: 50% 50%;
@@ -52,8 +53,11 @@ section.module.parallax-4 {
   background-image: url("../img/paralaxe05.png");
 }
 
+/* ============================================================
+  vista 768px / telemovel
+============================================================ */
 @media (max-width: 768px) {
-	
+	/* reduzir a altura do parallax para vista no telemovel */
 	section.module.parallax2 {
   height: 200px;
   background-position: 50% 50%;

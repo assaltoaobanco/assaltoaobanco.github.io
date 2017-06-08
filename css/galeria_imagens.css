@@ -1,15 +1,8 @@
-/* GALERIA IMAGENS*/
+/* ============================================================
+  Galeria de Imagens
+============================================================ */
 
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+/* coluna*/
 .column {
   float: left;
   width: 20%;
@@ -50,7 +43,7 @@
   font-weight: bold;
   opacity: .8;
 }
-
+/* passar por cima do botão fechar */
 .close:hover,
 .close:focus {
   color: orange;
@@ -58,7 +51,7 @@
   cursor: pointer;
   opacity: 1;
 }
-
+/* slides */
 .mySlides {
   display: none;
 }
@@ -114,20 +107,13 @@ a:focus, a:hover {
   padding: 2px 16px;
   color: white;
 }
-
+/* miniaturas de imagens */
 img.demo {
   opacity: 0.6;
 }
-
+/* passar por cima das miniaturas das imagens */
 .active,
 .demo:hover {
   opacity: 1;
 }
 
-img.hover-shadow {
-  transition: 0.3s
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}

@@ -1,40 +1,25 @@
+/* ============================================================
+  Barra de Navegação
+============================================================ */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 /*Menu*/
 #cssmenu {
   position: fixed;	
-  background: #b22f27;
+  background: #b22f27;   /*cor vermelha / se tirar fica azul*/
   width: 100%;
   z-index: 99999;
-  font-family: Arial;
+  font-family: Arial; /*font do texto da barra*/
 
 }
-#cssmenu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  display: block;
-  zoom: 1;
-}
-#cssmenu ul:after {
-  content: " ";
-  display: block;
-  font-size: 0;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
+
+/*fica apenas 1 barra, se tirar fica como no telemovel*/
 #cssmenu ul li {
   display: inline-block;
   padding: 0;
   margin: 0;
 }
-#cssmenu.align-right ul li {
-  float: right;
-}
-#cssmenu.align-center ul {
-  text-align: center;
-}
+
+/*visual da barra*/
 #cssmenu ul li a {
   color: #ffffff;
   text-decoration: none;
@@ -51,12 +36,14 @@
   -o-transition: color .25s;
   transition: color .25s;
 }
+/*passar por cima da palavra*/
 #cssmenu ul li a:hover {
   color: #761c27;
 }
 #cssmenu ul li a:hover:before {
   width: 100%;
 }
+/*quadrados entre cada palavra*/
 #cssmenu ul li a:after {
   content: "";
   display: block;
@@ -83,35 +70,27 @@
   -o-transition: width .25s;
   transition: width .25s;
 }
+/*remover ultimo quadrado*/
 #cssmenu ul li.last > a:after,
 #cssmenu ul li:last-child > a:after {
   display: none;
 }
-#cssmenu ul li.active a {
-  color: #761c27;
-}
-#cssmenu ul li.active a:before {
-  width: 100%;
-}
-#cssmenu.align-right li.last > a:after,
-#cssmenu.align-right li:last-child > a:after {
-  display: block;
-}
-#cssmenu.align-right li:first-child a:after {
-  display: none;
-}
+/* ============================================================
+  Vista 768px / telemovel
+============================================================ */
 @media screen and (max-width: 768px) {
 /*Fica fixo aos 768px*/	
+/*posição static e font Arial*/
   #cssmenu{
    position: static;
 	font-family: Arial;
   }
-  
+  /*fica 1 a 1 verticalmente / se tirar fica na horizontal*/
   #cssmenu ul li {
     float: none;
     display: block;
-	
   }
+  /*adiciona linha branca entre cada palavra*/
   #cssmenu ul li a {
     width: 100%;
     -moz-box-sizing: border-box;
@@ -119,10 +98,7 @@
     box-sizing: border-box;
     border-bottom: 1px solid #fb998c;
   }
-  #cssmenu ul li.last > a,
-  #cssmenu ul li:last-child > a {
-    border: 0;
-  }
+  /*remove o sublinhado das palavras*/
   #cssmenu ul li a:after {
     display: none;
   }

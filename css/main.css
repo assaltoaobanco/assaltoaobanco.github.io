@@ -60,7 +60,7 @@ main {
 /* ============================================================
    BOTÕES / IMAGENS / TIPOS DE LETRAS
 ============================================================ */
-
+/*  botão avaliar  */ 
 .btn-group-xs > .btn, .btn-xs {
     padding: 4px 7px;
     line-height: 1.5;
@@ -71,8 +71,8 @@ main {
 }
 
 .container h2 {  /*  titulo dentro do container  */ 
-  font-size: 80px;
-   font-family: IFC INSANE RODEO;
+  font-size: 50px;
+   font-family: Arial;
    margin-bottom: 40px;
  
   
@@ -86,8 +86,8 @@ b, strong {
     font-weight: 700;
     color: #ffa500;
 }
-/*  font-family: "Roboto Slab", serif; / ARIAL (anterior) */ 
- h3 {
+
+ h3 {  /*  titulo  */ 
   font: normal 19px/1.3 Arial;
   color: black;
   margin: 0 0 30px;
@@ -97,12 +97,12 @@ b, strong {
 
 h2 {   /*  titulo  */ 
   margin-bottom: 40px;
-  font-family: IFC INSANE RODEO;
-  font-size: 80px;
+  font-family: Arial;
+  font-size: 50px;
   color:orange;
 }
 
-/* botão de download */ 
+/*  botão avaliar */ 
 .glyphicon {
     font-size: 3vw;
 	padding-top:6px;
@@ -112,7 +112,7 @@ h2 {   /*  titulo  */
 	color: #ffa500;
 }
 
-.btn-default {
+.btn-default { /* botão avaliar */ 
     border-color: orange;
 	background-color: rgb(91, 13, 28);
 }
@@ -122,10 +122,12 @@ section .row img {
    width: 50%;
 }
 
+/* imagem/botão gogle play download */ 
 section .Download img {
     width: 30%;
 }
-/* mini game clicks */ 
+
+/* mini game caixa de texto */ 
 input {
     border: none;
     background: transparent;
@@ -139,7 +141,7 @@ input {
 
 
 .footer-distributed{
-	background-color: #5b0d1c;
+	background-color: #5b0d1c; 
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -150,15 +152,14 @@ input {
 	margin-top:-150px;
 }
 
-
-
 /* Footer Centrado */
 
+/* padding do texto do email */
 .footer-distributed .footer-center{
 	width: 35%;
 	padding-top: 25px;
 }
-
+/* Footer botao envelope do email */
 .footer-distributed .footer-center i{
 	background-color:  #6c0f1e;
 	color: #ffffff;
@@ -171,7 +172,7 @@ input {
 	margin: 10px 15px;
 	vertical-align: middle;
 }
-
+/* Footer botao envelope do email */
 .footer-distributed .footer-center i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
@@ -184,24 +185,13 @@ input {
 	margin:0;
 }
 
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
-
-.footer-distributed .footer-center p a{
-	color:  #5383d3;
-	text-decoration: none;
-}
 
 /* Footer ícones sociais */
 
 .footer-distributed .footer-icons{
 	margin-top: 23px;
 }
-
+/* icones facebook/gogleplay/github */
 .footer-distributed .footer-icons a{
 	display: inline-block;
 	width: 35px;
@@ -226,15 +216,7 @@ input {
 }
 
 
-/* Tamanho responsivo / Media */
-/* 1000px */
-@media (max-width: 1000px) {
 
-	.footer-distributed {
-		font: bold 14px sans-serif;
-	}
-
-}
 
 /* ============================================================
   TAMANHO RESPONSIVO AOS 768 PIXEIS
@@ -264,14 +246,14 @@ input {
 	 
 	 .container h2 { /*  titulo  */ 
 		margin-bottom: 30px;
-		font-family: IFC INSANE RODEO;
-		font-size: 40px;  /*  antes 30px ARIAL */ 
+		font-family: Arial;
+		font-size: 30px;  /*  antes 30px ARIAL */ 
 	}
  
 	 h2 {  /*  titulo  */ 
 		margin-bottom: 30px;
-		font-family: IFC INSANE RODEO;
-		font-size:40px; /*  antes 30px ARIAL */ 
+		font-family: Arial;
+		font-size:30px; /*  antes 30px ARIAL */ 
 	}
  
 	
@@ -279,14 +261,4 @@ input {
 
 
 
-/* ============================================================
-  TEXT LEVEL SEMANTICS
-============================================================ */
-a {
-  text-decoration: none;
-  color: #b4b4b4;
-}
 
-a:hover {
-  color: #818181;
-}
